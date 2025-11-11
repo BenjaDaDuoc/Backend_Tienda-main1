@@ -22,6 +22,6 @@ public class Region {
     private Integer id;
 
     @Column(name = "nombreRegion", length = 30, nullable = false)
-    private String nombre;
+    private String nombreRegion;
 
 }

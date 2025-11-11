@@ -1,5 +1,4 @@
 package com.example.elarayax.naves.model;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -14,14 +13,14 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "estados")
-
-public class Estado {
+@Table(name = "imagenes")
+public class Imagen {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(name = "nombreEstado", length = 30, nullable = false)
-    private String nombreEstado;
+    @Column(name = "url", length = 200, nullable = false)
+    private String url;
+
 
 }
